@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Presentation, Code2, UserPlus2 } from "lucide-astro";
+---
+
+<Layout
+	description="The main page for the Troy Web Development club"
+	title="Troy Web Dev"
+>
+	<p id="about" class="center">
+		Our club is about learning and the development of web experiences
+	</p>
+	<ul id="cards">
+		<Card
+			title="We teach"
+			icon={Presentation}
+			body="Our club will teach about web development, so you too can make websites"
+		/>
+		<Card title="We code" icon={Code2} body="We'll write websites together" />
+	</ul>
+	<a href="https://join.troywebdev.com">
+		<h2 id="join" class="center">
+			<UserPlus2 /> So join our club today!
+		</h2>
+	</a>
+</Layout>
+<style>
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	#about {
+		font-size: 18pt;
+	}
+	#join {
+		text-decoration: underline wavy 2px;
+		text-decoration-skip-ink: none;
+		font-size: 32pt;
+	}
+	#cards {
+		display: flex;
+		list-style: none;
+		gap: 10px;
+		justify-content: center;
+	}
+</style>

@@ -1,0 +1,27 @@
+{
+  "name": "web-dev-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@rometools/wasm-nodejs": "^10.0.1",
+    "astro": "^3.0.13",
+    "astro-compress": "^2.0.15",
+    "astro-compressor": "^0.4.0",
+    "astro-critters": "^2.0.11",
+    "astro-google-fonts-optimizer": "^0.2.2",
+    "astro-pagefind": "^1.2.4",
+    "astro-rome": "^2.0.9",
+    "astro-seo-meta": "^3.1.0",
+    "astro-seo-schema": "^3.1.1",
+    "astro-sitemap": "^1.0.0",
+    "autoprefixer": "^10.4.15",
+    "lucide-astro": "^0.279.0"
+  }
+}

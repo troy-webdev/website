@@ -1,0 +1,40 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	icon?: any;
+}
+
+const { title, body, icon = null } = Astro.props;
+const Icon = icon;
+---
+
+<li class="card">
+	<h2>
+		{
+			icon !== null && (
+				<span>
+					<Icon class="icon" />
+				</span>
+			)
+		}{title}
+	</h2>
+	<p class="center">
+		{body}
+	</p>
+</li>
+<style>
+	.icon {
+		width: 25;
+		padding-right: 5px;
+	}
+	.card {
+		h2 {
+			text-align: center;
+		}
+		width: 30%;
+		border-radius: 30px;
+		border: 2px solid white;
+		padding: 10px;
+	}
+</style>

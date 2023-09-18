@@ -1,0 +1,157 @@
+---
+import { Schema } from "astro-seo-schema";
+import { Seo } from "astro-seo-meta";
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+import { Image } from "astro:assets";
+import logo from "../assets/troy_webdev_logo.svg";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
+		<meta name="generator" content={Astro.generator} />
+		<!--<title>{title}</title>-->
+		<Seo
+			title={title}
+			description={description}
+			icon="favicon.svg"
+			keywords={["troy", "club", "webdev", "web"]}
+			themeColor="#000000"
+			colorScheme="dark"
+			facebook.type="website"
+			twitter.card="summary"
+		/>
+		<Schema
+			item={{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				parentOrganization: {
+					"@type": "School",
+					name: "Troy High School",
+					url: "https://www.fjuhsd.org/Troy",
+				},
+				name: "Troy WebDev Club",
+				description: "A Troy High School club about web development",
+				knowsAbout: ["web"],
+				logo: {
+					"@type": "ImageObject",
+					author: "William Wang",
+					name: "Troy Web Dev logo",
+					datePublished: "2023-9-16",
+					contentUrl: "favicon.svg",
+				},
+				address: {
+					"@type": "PostalAddress",
+					addressCountry: "USA",
+					addressLocality: "Fullerton",
+					addressRegion: "California",
+					postalCode: "92831",
+					streetAddress: "2200 Dorothy Ln",
+				},
+			}}
+			}
+		/>
+		<GoogleFontsOptimizer
+			url="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&family=Noto+Serif+Display:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+		/>
+	</head>
+	<body>
+		<header>
+			<span id="logo-wrap">
+				<Image src={logo} alt="the logo" width="175px" /><h1>
+					Troy Web Dev club
+				</h1>
+			</span>
+			<ul id="nav">
+				<li><button>Join</button></li>
+				<li><button>Discord</button></li>
+			</ul>
+		</header>
+		<main><slot /></main>
+		<footer></footer>
+		<style is:global>
+			button {
+				display: block-inline;
+				background: none;
+				font-family: "Playfair Display";
+				padding: 5px;
+				font-size: 12pt;
+				border: 2px solid white;
+				border-radius: 10px;
+			}
+			button:hover {
+				transform: scale(1.1);
+			}
+			button:active {
+				transform: scale(1.1);
+				border: 2px solid grey;
+			}
+			#nav {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				gap: 25px;
+			}
+			header {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+			.center {
+				text-align: center;
+			}
+			#logo-wrap {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			h1 {
+				font-family: "Playfair Display";
+				font-weight: 700;
+				font-size: 60pt;
+			}
+			h2 {
+				font-family: "Playfair Display";
+				font-weight: 700;
+				font-size: 24pt;
+			}
+			p {
+				font-family: "Noto Serif";
+			}
+			body {
+				background: hsla(214, 92%, 47%, 1);
+
+				background: linear-gradient(
+					0deg,
+					hsla(214, 92%, 47%, 1) 0%,
+					hsla(231, 85%, 24%, 1) 100%
+				);
+
+				background: -moz-linear-gradient(
+					0deg,
+					hsla(214, 92%, 47%, 1) 0%,
+					hsla(231, 85%, 24%, 1) 100%
+				);
+
+				background: -webkit-linear-gradient(
+					0deg,
+					hsla(214, 92%, 47%, 1) 0%,
+					hsla(231, 85%, 24%, 1) 100%
+				);
+
+				filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+			}
+		</style>
+	</body>
+</html>
