@@ -13,7 +13,6 @@
     "@rometools/wasm-nodejs": "^10.0.1",
     "astro": "^3.0.13",
     "astro-compress": "^2.0.15",
-    "astro-compressor": "^0.4.0",
     "astro-critters": "^2.0.11",
     "astro-google-fonts-optimizer": "^0.2.2",
     "astro-pagefind": "^1.2.4",
@@ -22,6 +21,7 @@
     "astro-seo-schema": "^3.1.1",
     "astro-sitemap": "^1.0.0",
     "autoprefixer": "^10.4.15",
-    "lucide-astro": "^0.279.0"
+    "lucide-astro": "^0.279.0",
+    "sharp": "^0.32.6"
   }
 }
