@@ -68,10 +68,28 @@ const { title, description } = Astro.props;
 	</head>
 	<body>
 		<header>
-			<span id="logo-wrap">
-				<Image src={logo} alt="the logo" width="175px" /><h1>
-					Troy Web Dev club
+			<span id="logo-wrap" style="overflow:hidden">
+				<Image src={logo} alt="the logo" width="175px" />
+				<h1>
+					Troy Web Dev Club
 				</h1>
+				<style>
+					h1, img { 
+						position: relative;
+						animation: slideright 2s ease-out 0s 1 alternate;
+					}
+
+					@keyframes slideright {
+						from {
+							opacity: 0%;
+							left: 27%;
+						}
+						to {
+							opacity: 100%;
+							left: 0%;
+						}
+					}
+				</style>
 			</span>
 			<ul id="nav">
 				<li><button>Join</button></li>
