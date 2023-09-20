@@ -34,6 +34,7 @@ const Icon = icon;
 	}
 
 	.card {
+		position: relative;
 		width: 800px;
 		border-radius: 30px;
 		border: 2px solid white;
@@ -44,5 +45,39 @@ const Icon = icon;
 
 	.card p {
 		font-size: 20px;
+	}
+
+	li:nth-child(odd) {
+		opacity: 0;
+		animation: slideright 1s ease-out 0.5s 1 alternate;
+		animation-fill-mode: both;
+	}
+
+	@keyframes slideright {
+		from {
+			opacity: 0%;
+			left: 35%;
+		}
+		to {
+			opacity: 100%;
+			left: 0%;
+		}
+	}
+
+	li:nth-child(even) {
+		opacity: 0;
+		animation: slideleft 1s ease-out 0.5s 1 alternate;
+		animation-fill-mode: both;
+	}
+
+	@keyframes slideleft {
+		from {
+			opacity: 0%;
+			left: -35%;
+		}
+		to {
+			opacity: 100%;
+			left: 0%;
+		}
 	}
 </style>
