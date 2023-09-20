@@ -7,6 +7,10 @@ import logo from "../assets/troy_webdev_logo.svg";
 //import bg from "../assets/web bg.svg";
 import { UserPlus2 } from "lucide-astro";
 import { Discord, Instagram, Googleclassroom } from "simple-icons-astro";
+import "@fontsource-variable/handjet";
+import "@fontsource/gruppo";
+import "@fontsource/vt323";
+import "@fontsource/courier-prime";
 
 interface Props {
 	title: string;
@@ -64,9 +68,6 @@ const { title, description } = Astro.props;
 				},
 			}}
 			}
-		/>
-		<GoogleFontsOptimizer
-			url="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Gruppo&family=Handjet:wght@500&family=VT323&display=swap"
 		/>
 	</head>
 	<body>
@@ -180,7 +181,7 @@ const { title, description } = Astro.props;
 				font-size: 60pt;
 			}
 			h2 {
-				font-family: "Handjet";
+				font-family: "Handjet Variable";
 				font-weight: 700;
 				font-size: 24pt;
 			}

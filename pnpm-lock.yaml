@@ -5,6 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/handjet':
+    specifier: ^5.0.3
+    version: 5.0.3
+  '@fontsource/courier-prime':
+    specifier: ^5.0.12
+    version: 5.0.12
+  '@fontsource/gruppo':
+    specifier: ^5.0.12
+    version: 5.0.12
+  '@fontsource/vt323':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@rometools/wasm-nodejs':
     specifier: ^10.0.1
     version: 10.0.1
@@ -734,6 +746,22 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/handjet@5.0.3:
+    resolution: {integrity: sha512-jRoogAbUUJhB+k8K3A65RB/TwM0PDzYgt5m8raV3Tpq90AdVW4N9LoCzL/iLStnHTnVFiGvtHhCzEK9HHjPCvg==}
+    dev: false
+
+  /@fontsource/courier-prime@5.0.12:
+    resolution: {integrity: sha512-40txC7lTOYvEWjzFaLCNS2JQOEnK/C+TrhVgUtjRRtstI7CJelmv9dlsUZ2EVb6vNEbWxChIgUaulfwQKaVMog==}
+    dev: false
+
+  /@fontsource/gruppo@5.0.12:
+    resolution: {integrity: sha512-Jj7VxKzwtiOssPa2Z9ylEiKUDQH4TLCWBfSQsCjHeFPECo8a8EWUtBBeBxgbkxq8l1HFhECIPxDSKmRDFbXXLg==}
+    dev: false
+
+  /@fontsource/vt323@5.0.8:
+    resolution: {integrity: sha512-WU1qtqHObNqH2Tq6NmzwpO2Gyu3E4nqEOdrSMs0j9mwtRRSHf9FeM+iYVdbA1rhJDDZSw0ZSZakGAZxOJNTTdw==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}

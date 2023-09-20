@@ -10,6 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/handjet": "^5.0.3",
+    "@fontsource/courier-prime": "^5.0.12",
+    "@fontsource/gruppo": "^5.0.12",
+    "@fontsource/vt323": "^5.0.8",
     "@rometools/wasm-nodejs": "^10.0.1",
     "astro": "^3.0.13",
     "astro-compress": "^2.0.15",

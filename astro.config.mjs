@@ -8,5 +8,5 @@ const site = 'https://troywebdev.com';
 // https://astro.build/config
 export default defineConfig({
   site,
-  integrations: [sitemap({xslUrl: site + '/xsl/sitemap.xsl'}), rome(), critters(), compress()]
+  integrations: [sitemap({xslUrl: site + '/assets/xsl/sitemap.xsl'}), rome(), critters(), compress()]
 });
