@@ -4,6 +4,8 @@ import { Seo } from "astro-seo-meta";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import { Image } from "astro:assets";
 import logo from "../assets/troy_webdev_logo.svg";
+import { UserPlus2 } from "lucide-astro";
+import { Discord } from "simple-icons-astro";
 
 interface Props {
 	title: string;
@@ -69,12 +71,11 @@ const { title, description } = Astro.props;
 	<body>
 		<header>
 			<span id="logo-wrap" style="overflow:hidden">
-				<Image src={logo} alt="the logo" width="175px" />
-				<h1>
-					Troy Web Dev Club
-				</h1>
+				<Image src={logo} alt="the logo" width="100px" />
+				<h1>Troy Web Dev Club</h1>
 				<style>
-					h1, img { 
+					h1,
+					img {
 						position: relative;
 						animation: slideright 1s ease-out 0s 1 alternate;
 					}
@@ -95,10 +96,23 @@ const { title, description } = Astro.props;
 		<main><slot /></main>
 		<footer>
 			<ul id="nav">
-				<li><a href="https://join.troywebdev.com" target="_blank"><button>Join</button></a></li>
-				<li><a href="https://discord.troywebdev.com" target="_blank"><button>Discord</button></a></li>
-				<li><a href="https://classroom.google.com/c/NjI0NTMyMDMwNTM5?cjc=pl5cq2g" target="_blank"><button>Classroom</button></a></li>
-				<li><a href="https://www.instagram.com/ths_webdev/?hl=en" target="_blank"><button>Instagram</button></a></li>
+				<li>
+					<a href="https://join.troywebdev.com" target="_blank"
+						><button>Join</button></a>
+				</li>
+				<li>
+					<a href="https://discord.troywebdev.com" target="_blank"
+						><button>Discord</button></a>
+				</li>
+				<li>
+					<a
+						href="https://classroom.google.com/c/NjI0NTMyMDMwNTM5?cjc=pl5cq2g"
+						target="_blank"><button>Classroom</button></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/ths_webdev/?hl=en" target="_blank"
+						><button>Instagram</button></a>
+				</li>
 			</ul>
 			<style>
 				ul {
@@ -140,6 +154,7 @@ const { title, description } = Astro.props;
 			#logo-wrap {
 				display: flex;
 				justify-content: center;
+				gap: 5px;
 				align-items: center;
 			}
 			h1 {
@@ -179,11 +194,10 @@ const { title, description } = Astro.props;
 				filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
 			}
 		</style>
+		<style>
+			body {
+				overflow-x: hidden;
+			}
+		</style>
 	</body>
-
-	<style>
-		body {
-			overflow-x: hidden;
-		}
-	</style>
 </html>

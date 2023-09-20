@@ -44,6 +44,9 @@ dependencies:
   sharp:
     specifier: ^0.32.6
     version: 0.32.6
+  simple-icons-astro:
+    specifier: ^9.15.0
+    version: 9.15.0(astro@3.0.13)
 
 packages:
 
@@ -3421,6 +3424,14 @@ packages:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
+    dev: false
+
+  /simple-icons-astro@9.15.0(astro@3.0.13):
+    resolution: {integrity: sha512-wUipFdrdyZJ81/clBAqsRrKaK3ykDEP5zB6VQum1GDNrgrcUrVcpyjN0dOPVu5NbfL9RSOpojaC5/tNLAow7rw==}
+    peerDependencies:
+      astro: ^2.7.1 || ^3.0.0
+    dependencies:
+      astro: 3.0.13
     dev: false
 
   /simple-swizzle@0.2.2:
