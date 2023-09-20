@@ -91,13 +91,19 @@ const { title, description } = Astro.props;
 					}
 				</style>
 			</span>
-			<ul id="nav">
-				<li><button>Join</button></li>
-				<li><button>Discord</button></li>
-			</ul>
 		</header>
 		<main><slot /></main>
-		<footer></footer>
+		<footer>
+			<ul id="nav">
+				<li><a href="https://join.troywebdev.com" target="_blank"><button>Join</button></a></li>
+				<li><a href="https://discord.troywebdev.com" target="_blank"><button>Discord</button></a></li>
+			</ul>
+			<style>
+				ul {
+					padding-top: 2em;
+				}
+			</style>
+		</footer>
 		<style is:global>
 			button {
 				display: block-inline;
