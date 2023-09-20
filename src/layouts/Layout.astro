@@ -4,8 +4,9 @@ import { Seo } from "astro-seo-meta";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import { Image } from "astro:assets";
 import logo from "../assets/troy_webdev_logo.svg";
+//import bg from "../assets/web bg.svg";
 import { UserPlus2 } from "lucide-astro";
-import { Discord } from "simple-icons-astro";
+import { Discord, Instagram, Googleclassroom } from "simple-icons-astro";
 
 interface Props {
 	title: string;
@@ -65,7 +66,7 @@ const { title, description } = Astro.props;
 			}
 		/>
 		<GoogleFontsOptimizer
-			url="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&family=Noto+Serif+Display:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+			url="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Gruppo&family=Handjet:wght@500&family=VT323&display=swap"
 		/>
 	</head>
 	<body>
@@ -77,10 +78,21 @@ const { title, description } = Astro.props;
 					h1,
 					img {
 						position: relative;
-						animation: slideright 1s ease-out 0s 1 alternate;
+						animation: slidetop 1s ease-out 0s 1 alternate;
+						margin: 0;
 					}
 
-					@keyframes slideright {
+					@keyframes slidetop {
+						from {
+							opacity: 0%;
+							top: -27%;
+						}
+						to {
+							opacity: 100%;
+							top: 0%;
+						}
+					}
+					@keyframes slideleft {
 						from {
 							opacity: 0%;
 							left: 27%;
@@ -98,20 +110,23 @@ const { title, description } = Astro.props;
 			<ul id="nav">
 				<li>
 					<a href="https://join.troywebdev.com" target="_blank"
-						><button>Join</button></a>
+						><button><UserPlus2 /><br />Join</button></a
+					>
 				</li>
 				<li>
 					<a href="https://discord.troywebdev.com" target="_blank"
-						><button>Discord</button></a>
+						><button><Discord /><br />Discord</button></a
+					>
 				</li>
 				<li>
-					<a
-						href="https://classroom.google.com/c/NjI0NTMyMDMwNTM5?cjc=pl5cq2g"
-						target="_blank"><button>Classroom</button></a>
+					<a href="https://gclassroom.troywebdev.com" target="_blank"
+						><button><Googleclassroom /><br />Classroom</button></a
+					>
 				</li>
 				<li>
 					<a href="https://www.instagram.com/ths_webdev/?hl=en" target="_blank"
-						><button>Instagram</button></a>
+						><button><Instagram /><br />Instagram</button></a
+					>
 				</li>
 			</ul>
 			<style>
@@ -124,7 +139,7 @@ const { title, description } = Astro.props;
 			button {
 				display: block-inline;
 				background: none;
-				font-family: "Playfair Display";
+				font-family: "Courier Prime";
 				padding: 5px;
 				font-size: 12pt;
 				border: 2px solid white;
@@ -142,6 +157,8 @@ const { title, description } = Astro.props;
 				display: flex;
 				justify-content: center;
 				gap: 25px;
+				margin: 0;
+				padding: 0;
 			}
 			header {
 				display: flex;
@@ -154,44 +171,27 @@ const { title, description } = Astro.props;
 			#logo-wrap {
 				display: flex;
 				justify-content: center;
-				gap: 5px;
+				gap: 10px;
 				align-items: center;
 			}
 			h1 {
-				font-family: "Playfair Display";
+				font-family: Gruppo;
 				font-weight: 700;
 				font-size: 60pt;
 			}
 			h2 {
-				font-family: "Playfair Display";
+				font-family: "Handjet";
 				font-weight: 700;
 				font-size: 24pt;
 			}
 			p {
-				font-family: "Noto Serif";
+				font-family: "Courier Prime";
 			}
 			body {
-				background: hsla(214, 92%, 47%, 1);
-
-				background: linear-gradient(
-					0deg,
-					hsla(214, 92%, 47%, 1) 0%,
-					hsla(231, 85%, 24%, 1) 100%
-				);
-
-				background: -moz-linear-gradient(
-					0deg,
-					hsla(214, 92%, 47%, 1) 0%,
-					hsla(231, 85%, 24%, 1) 100%
-				);
-
-				background: -webkit-linear-gradient(
-					0deg,
-					hsla(214, 92%, 47%, 1) 0%,
-					hsla(231, 85%, 24%, 1) 100%
-				);
-
-				filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+				background: url(/assets/web bg.svg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 		</style>
 		<style>

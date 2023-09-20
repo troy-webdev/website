@@ -8,19 +8,17 @@ import { Presentation, Code2, UserPlus2 } from "lucide-astro";
 	description="The main page for the Troy Web Development club"
 	title="Troy Web Dev"
 >
-	<p id="about" class="center">
-		Learn & develop
-	</p>
+	<p id="about" class="center">Learn & develop</p>
 	<ul id="cards">
 		<Card
 			title="Headstart at CS"
 			icon={Presentation}
 			body="Anyone can join and learn the basics or advanced techniques of how to design, construct, and use websites to their fullest potential! We will show freshman or anyone new to Computer Science the ropes and give them a head start in APCSP, or give them assistance in their Troy Tech Computer Science Pathway!"
 		/>
-		<Card 
+		<Card
 			title="Opportunities"
-			icon={Code2} 
-			body="We will train you with the tools and knowledge of how to produce useful websites, help you collaborate with others, help you create and set up a digital portfolio, & offer you opportunities for competitions." 
+			icon={Code2}
+			body="We will train you with the tools and knowledge of how to produce useful websites, help you collaborate with others, help you create and set up a digital portfolio, & offer you opportunities for competitions."
 		/>
 	</ul>
 </Layout>
@@ -31,7 +29,8 @@ import { Presentation, Code2, UserPlus2 } from "lucide-astro";
 	}
 	#about {
 		font-size: 48pt;
-		font-family: monospace;
+		font-family: VT323;
+		margin: 0;
 	}
 	#join {
 		text-decoration: underline wavy 2px;
@@ -43,6 +42,8 @@ import { Presentation, Code2, UserPlus2 } from "lucide-astro";
 		list-style: none;
 		gap: 10px;
 		text-align: center;
-		width: 100%
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 </style>
