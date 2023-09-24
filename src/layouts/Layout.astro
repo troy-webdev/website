@@ -166,6 +166,11 @@ const { title, description } = Astro.props;
 				justify-content: center;
 				flex-direction: column;
 			}
+			footer {
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
 			.center {
 				text-align: center;
 			}
@@ -189,7 +194,7 @@ const { title, description } = Astro.props;
 				font-family: "Courier Prime";
 			}
 			body {
-				background: url("https://gist.github.com/yavko/319dc56892c643245b9c0d9683da8d4f/raw/0812095f233f8570da9ce315defbfb2f76d8b53f/bg.svg");
+				background: url("../assets/bg-opt.svg") no-repeat center center fixed;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
