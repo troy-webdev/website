@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="37.647243"
-   height="37.139404"
-   viewBox="0 0 37.647243 37.139404"
+   width="72"
+   height="71.028763"
+   viewBox="0 0 71.999999 71.028762"
    version="1.1"
    id="svg1"
    sodipodi:docname="cur.svg"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="11.959541"
-     inkscape:cx="16.764857"
-     inkscape:cy="34.951174"
+     inkscape:zoom="5.9422671"
+     inkscape:cx="26.168463"
+     inkscape:cy="24.064889"
      inkscape:window-width="1619"
      inkscape:window-height="825"
      inkscape:window-x="206"
@@ -35,7 +35,7 @@
   <defs
      id="defs1">
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter77"
        x="-2.2546214"
@@ -149,7 +149,7 @@
     <path
        id="path1"
        style="fill:none;fill-opacity:1;stroke:#00e9ff;stroke-width:1.37929;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;filter:url(#filter77)"
-       d="M 26.797415,36.97851 18.73333,17.555511 38.344881,25.420116 m 0.02681,0.126291 L 36.564518,14.634872 2.103663,1.2202811 15.95314,35.132867 l 10.847259,1.847601 -3.753408,-9.217644 9.752084,3.618259 -3.669377,-9.639611 z"
+       d="M 43.973794,53.923189 35.909709,34.50019 55.52126,42.364795 m 0.02681,0.126291 -1.807173,-10.911535 -34.460855,-13.414591 13.849477,33.912586 10.847259,1.847601 -3.753408,-9.217644 9.752084,3.618259 -3.669377,-9.639611 z"
        sodipodi:nodetypes="cccccccccccc"
        inkscape:transform-center-x="-18.191872"
        inkscape:transform-center-y="18.335414" />
