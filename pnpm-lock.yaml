@@ -17,6 +17,15 @@ dependencies:
   '@fontsource/vt323':
     specifier: ^5.0.14
     version: 5.0.14
+  '@playform/compress':
+    specifier: ^0.1.1
+    version: 0.1.1(typescript@5.5.4)
+  '@playform/format':
+    specifier: ^0.0.7
+    version: 0.0.7(typescript@5.5.4)
+  '@playform/inline':
+    specifier: ^0.1.0
+    version: 0.1.0(typescript@5.5.4)
   '@rometools/wasm-nodejs':
     specifier: ^10.0.1
     version: 10.0.1
@@ -47,6 +56,9 @@ dependencies:
   autoprefixer:
     specifier: ^10.4.20
     version: 10.4.20(postcss@8.4.45)
+  deepmerge-ts:
+    specifier: ^7.1.0
+    version: 7.1.0
   lucide-astro:
     specifier: ^0.439.0
     version: 0.439.0(astro@4.15.4)
@@ -324,6 +336,113 @@ packages:
       '@babel/helper-string-parser': 7.24.8
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@biomejs/backend-jsonrpc@1.8.3:
+    resolution: {integrity: sha512-5WQZxsyX89kuUB6fVwGLiFM8MK9WztQz1C28WNWfANEWVZCVCubNyLuAw1+hkxNCozqNeo6bJ9hhJpZ52Eb/0w==}
+    engines: {node: '>=14.21.3'}
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.8.3
+      '@biomejs/cli-darwin-x64': 1.8.3
+      '@biomejs/cli-linux-arm64': 1.8.3
+      '@biomejs/cli-linux-arm64-musl': 1.8.3
+      '@biomejs/cli-linux-x64': 1.8.3
+      '@biomejs/cli-linux-x64-musl': 1.8.3
+      '@biomejs/cli-win32-arm64': 1.8.3
+      '@biomejs/cli-win32-x64': 1.8.3
+    dev: false
+
+  /@biomejs/cli-darwin-arm64@1.8.3:
+    resolution: {integrity: sha512-9DYOjclFpKrH/m1Oz75SSExR8VKvNSSsLnVIqdnKexj6NwmiMlKk94Wa1kZEdv6MCOHGHgyyoV57Cw8WzL5n3A==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-darwin-x64@1.8.3:
+    resolution: {integrity: sha512-UeW44L/AtbmOF7KXLCoM+9PSgPo0IDcyEUfIoOXYeANaNXXf9mLUwV1GeF2OWjyic5zj6CnAJ9uzk2LT3v/wAw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-linux-arm64-musl@1.8.3:
+    resolution: {integrity: sha512-9yjUfOFN7wrYsXt/T/gEWfvVxKlnh3yBpnScw98IF+oOeCYb5/b/+K7YNqKROV2i1DlMjg9g/EcN9wvj+NkMuQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-linux-arm64@1.8.3:
+    resolution: {integrity: sha512-fed2ji8s+I/m8upWpTJGanqiJ0rnlHOK3DdxsyVLZQ8ClY6qLuPc9uehCREBifRJLl/iJyQpHIRufLDeotsPtw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-linux-x64-musl@1.8.3:
+    resolution: {integrity: sha512-UHrGJX7PrKMKzPGoEsooKC9jXJMa28TUSMjcIlbDnIO4EAavCoVmNQaIuUSH0Ls2mpGMwUIf+aZJv657zfWWjA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-linux-x64@1.8.3:
+    resolution: {integrity: sha512-I8G2QmuE1teISyT8ie1HXsjFRz9L1m5n83U1O6m30Kw+kPMPSKjag6QGUn+sXT8V+XWIZxFFBoTDEDZW2KPDDw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-win32-arm64@1.8.3:
+    resolution: {integrity: sha512-J+Hu9WvrBevfy06eU1Na0lpc7uR9tibm9maHynLIoAjLZpQU3IW+OKHUtyL8p6/3pT2Ju5t5emReeIS2SAxhkQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/cli-win32-x64@1.8.3:
+    resolution: {integrity: sha512-/PJ59vA1pnQeKahemaQf4Nyj7IKUvGQSc3Ze1uIGi+Wvr1xF7rGobSrAAG01T/gUDG21vkDsZYM03NAmPiVkqg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@biomejs/js-api@0.6.2(@biomejs/wasm-nodejs@1.8.3):
+    resolution: {integrity: sha512-4IhoDIL/O6ifUT2i/lDqXBGTuQpwurQ2i81440L5N4B90bYo9boHdtcK4ZjliZmN31ST0TDh6s9aiZEAGi+0og==}
+    peerDependencies:
+      '@biomejs/wasm-bundler': ^1.8.2
+      '@biomejs/wasm-nodejs': ^1.8.2
+      '@biomejs/wasm-web': ^1.8.2
+    peerDependenciesMeta:
+      '@biomejs/wasm-bundler':
+        optional: true
+      '@biomejs/wasm-nodejs':
+        optional: true
+      '@biomejs/wasm-web':
+        optional: true
+    dependencies:
+      '@biomejs/wasm-nodejs': 1.8.3
+    dev: false
+
+  /@biomejs/wasm-nodejs@1.8.3:
+    resolution: {integrity: sha512-4E7qOBjbQDHKG2MwEXM6DzacQqibGhPQSCSgzziP7enpmJYsZbvW1mYUTlOHio1/OgadyixQpZ/gZjj2IEeISg==}
     dev: false
 
   /@emnapi/runtime@1.2.0:
@@ -1031,6 +1150,86 @@ packages:
     dev: false
     optional: true
 
+  /@playform/compress@0.1.1(typescript@5.5.4):
+    resolution: {integrity: sha512-nsGzMVGuwUNWtvwSzSB1jNIsKeNBeXs/QAZcYcXipqxflP8VILZjJXbHe/eAmjgQB4wfMOfGTD1GhtQ2mhP6QQ==}
+    dependencies:
+      '@playform/pipe': 0.1.0
+      '@types/csso': 5.0.4
+      '@types/html-minifier-terser': 7.0.2
+      astro: 4.15.4(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4)
+      csso: 5.0.5
+      deepmerge-ts: 7.1.0
+      html-minifier-terser: 7.2.0
+      kleur: 4.1.5
+      lightningcss: 1.25.1
+      sharp: 0.33.4
+      svgo: 4.0.0-rc.0
+      terser: 5.31.3
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - typescript
+    dev: false
+
+  /@playform/format@0.0.7(typescript@5.5.4):
+    resolution: {integrity: sha512-k+38VCgGhmQ4H6Xncng0zNhgKqg3EuTt36mDTi5a7ZiSrcdubIjBrXVdoAlejQy4xov7oMp0T0IzK+brzgOtOA==}
+    dependencies:
+      '@biomejs/backend-jsonrpc': 1.8.3
+      '@biomejs/js-api': 0.6.2(@biomejs/wasm-nodejs@1.8.3)
+      '@biomejs/wasm-nodejs': 1.8.3
+      '@playform/pipe': 0.0.6
+      astro: 4.15.4(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4)
+      deepmerge-ts: 7.0.3
+    transitivePeerDependencies:
+      - '@biomejs/wasm-bundler'
+      - '@biomejs/wasm-web'
+      - '@types/node'
+      - less
+      - lightningcss
+      - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
+    dev: false
+
+  /@playform/inline@0.1.0(typescript@5.5.4):
+    resolution: {integrity: sha512-IDy8oH1UH9qFz2swmL6sgODWrvNltf0L3VrHCoDemW9GjDNbdEIoDafDMdC5gw3C92Fn/jUBA+tYvy+j7/mqFw==}
+    dependencies:
+      '@playform/pipe': 0.1.0
+      astro: 4.15.4(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4)
+      critters: 0.0.24
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
+    dev: false
+
+  /@playform/pipe@0.0.6:
+    resolution: {integrity: sha512-dsW6Dyq9yNLOSw0iV7iD0P13pqmKFk2YjlGzgJOM7Qnl05Vdv0beFz0MquOma7rCE+Kg4njCPNAQUDsSss8xZw==}
+    dependencies:
+      '@types/node': 20.14.2
+      deepmerge-ts: 7.0.3
+      fast-glob: 3.3.2
+    dev: false
+
   /@playform/pipe@0.1.0:
     resolution: {integrity: sha512-EiY5y81BKSIBduFDM9UAN9RISQptYd8TR1UWTx1H/5Tm86AHxjAm/fiGqUuWwZShBqc5K1TY4ynkT6dpp1r7UQ==}
     dependencies:
@@ -1285,6 +1484,12 @@ packages:
 
   /@types/node@20.14.12:
     resolution: {integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
+
+  /@types/node@20.14.2:
+    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1937,6 +2142,11 @@ packages:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
     requiresBuild: true
+    dev: false
+
+  /deepmerge-ts@7.0.3:
+    resolution: {integrity: sha512-dxFbFO2RSIhPNBPL/j8Nvdt6/vrkW9+uGf1NLah/QxBGAVbK9fj2fGTO+HwdHpPAyFAsyT9iEn/1SI9SUvespw==}
+    engines: {node: '>=16.0.0'}
     dev: false
 
   /deepmerge-ts@7.1.0:

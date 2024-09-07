@@ -14,6 +14,9 @@
     "@fontsource/courier-prime": "^5.0.21",
     "@fontsource/gruppo": "^5.0.21",
     "@fontsource/vt323": "^5.0.14",
+    "@playform/compress": "^0.1.1",
+    "@playform/format": "^0.0.7",
+    "@playform/inline": "^0.1.0",
     "@rometools/wasm-nodejs": "^10.0.1",
     "astro": "^4.15.4",
     "astro-compress": "^2.3.1",
@@ -24,6 +27,7 @@
     "astro-seo-schema": "^4.0.2",
     "astro-sitemap": "^1.0.0",
     "autoprefixer": "^10.4.20",
+    "deepmerge-ts": "^7.1.0",
     "lucide-astro": "^0.439.0",
     "sharp": "^0.32.6",
     "simple-icons-astro": "^13.8.0"
