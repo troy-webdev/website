@@ -193,7 +193,12 @@ const { title, description } = Astro.props;
 			p {
 				font-family: "Courier Prime";
 			}
+			button,
+			button:hover {
+				cursor: url(/assets/cur_hov.svg), url(/assets/cur.svg), auto !important;
+			}
 			body {
+				cursor: url(/assets/cur.svg), auto;
 				background: url("../assets/bg-opt.svg") no-repeat center center fixed;
 				background-position: center;
 				background-repeat: no-repeat;
