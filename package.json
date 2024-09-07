@@ -20,12 +20,12 @@
     "astro-critters": "^2.2.0",
     "astro-google-fonts-optimizer": "^0.2.2",
     "astro-pagefind": "^1.6.0",
-    "astro-seo-meta": "^3.1.1",
-    "astro-seo-schema": "^3.2.1",
+    "astro-seo-meta": "^4.1.1",
+    "astro-seo-schema": "^4.0.2",
     "astro-sitemap": "^1.0.0",
     "autoprefixer": "^10.4.20",
-    "lucide-astro": "^0.279.0",
+    "lucide-astro": "^0.439.0",
     "sharp": "^0.32.6",
-    "simple-icons-astro": "^9.21.0"
+    "simple-icons-astro": "^13.8.0"
   }
 }
