@@ -5,7 +5,7 @@ interface Props {
 	icon?: any;
 }
 
-const { title, body, icon = null } = Astro.props;
+const { title, icon = null } = Astro.props;
 const Icon = icon;
 ---
 
@@ -20,7 +20,7 @@ const Icon = icon;
 		}{title}
 	</h2>
 	<p class="center">
-		{body}
+		<slot />
 	</p>
 </li>
 <style>
