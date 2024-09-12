@@ -139,7 +139,7 @@ const { title, description } = Astro.props;
 		<style is:global>
 			button {
 				display: block-inline;
-				background: none;
+				background-color: black;
 				font-family: "Courier Prime";
 				padding: 5px;
 				font-size: 12pt;
@@ -193,9 +193,8 @@ const { title, description } = Astro.props;
 			p {
 				font-family: "Courier Prime";
 			}
-			button,
-			button:hover {
-				cursor: url(/assets/cur_hov.svg), url(/assets/cur.svg), auto !important;
+			li {
+				font-family: "Courier Prime";
 			}
 			body {
 				cursor: url(/assets/cur.svg), auto;
@@ -203,6 +202,7 @@ const { title, description } = Astro.props;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
+				margin-bottom: 80px;
 			}
 			::selection {
 				background-color: #006a74;
